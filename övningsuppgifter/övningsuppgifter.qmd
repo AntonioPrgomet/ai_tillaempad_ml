@@ -236,7 +236,7 @@ h) *Random forest* - [https://scikit-learn.org/stable/modules/generated/sklearn.
 ## Koduppgifter
 11. Gå igenom samtliga kodexempel i kapitlet och skriv gärna av koden manuellt. Det är även bra att experimentera genom att ändra vissa delar av koden och läsa dokumentationen. 
 
-12. Datasetet "hr_employee_data.csv" innehåller data kopplat till ett företags anställda. Gör en *EDA* och tillhörande analys, föreställ dig att ledningsgruppen på ett företag ska ta del av analysen. I denna uppgift ska ingen ML-modellering göras (det kommer göras i nästa kapitel). Syftet är dels att träna på att genomföra analyser dels att demonstrera hur mycket man kan göra även utan ML-modellering.  
+12. Datasetet "hr_employee_data.xlsx" innehåller data kopplat till ett företags anställda. Gör en *EDA* och tillhörande analys, föreställ dig att ledningsgruppen på ett företag ska ta del av analysen. I denna uppgift ska ingen ML-modellering göras (det kommer göras i nästa kapitel). Syftet är dels att träna på att genomföra analyser dels att demonstrera hur mycket man kan göra även utan ML-modellering.  
 
 13. Nedan ser vi en början till modellering av ett dataset kopplat till diabetes. Läs på vad datasetet innebär och genomför ett komplett ML-flöde. Börja med att göra ett grundläggande flöde som fungerar, därefter kan du om du önskar försöka förbättra resultatet. 
 ```{python}
@@ -327,7 +327,7 @@ print(classification_report(y_true, y_pred, target_names=target_names))
 
 10. Läs dokumentationen och visualisera ett beslutsträd: [https://scikit-learn.org/stable/modules/generated/sklearn.tree.plot_tree.html](https://scikit-learn.org/stable/modules/generated/sklearn.tree.plot_tree.html)
 
-11. I föregående kapitel gjordes en *EDA* på datasetet "hr_employee_data.csv". Gör nu ett komplett ML-flöde där den beroende variabeln, $y$, är `left`. Om den variabeln är 1 så betyder det att den anställde har lämnat företaget och om den är 0 så betyder det att den anställde inte har lämnat företaget, det vill säga jobbar kvar. 
+11. I föregående kapitel gjordes en *EDA* på datasetet "hr_employee_data.xlsx". Gör nu ett komplett ML-flöde där den beroende variabeln, $y$, är `left`. Om den variabeln är 1 så betyder det att den anställde har lämnat företaget och om den är 0 så betyder det att den anställde inte har lämnat företaget, det vill säga jobbar kvar. 
 
 12. Nedan ser vi en början till modellering av ett mycket berömt dataset kopplat till blommor. Läs på vad datasetet innebär och genomför ett komplett ML-flöde. Börja med att göra ett grundläggande flöde som fungerar, därefter kan du om du önskar försöka förbättra resultatet. 
 ```{python}
@@ -450,7 +450,7 @@ c) Det som tagits fram, hur kan det vara användbart i verkligheten för ett fö
 
 d) Vi har gjort ett enkelt kodexempel, lek gärna runt och fortsätt utveckla det. Exempelvis kan du undersöka hur många kluster som vore bra att använda. 
 
-8. Genomför en klusteranalys på datasetet "hr_employee_data.csv". Notera, i kapitel 4, uppgift 11, så använde vi `left` som den beroende variabeln $y$. Eftersom vi nu genomför en klusteranalys så modellerar vi inte med avseende på $y$ utan nu betraktar vi alla variabler som $x$. Fundera på vilka variabler du vill använda och hur det du skapar hade kunnat användas i verkligheten.  
+8. Genomför en klusteranalys på datasetet "hr_employee_data.xlsx". Notera, i kapitel 4, uppgift 11, så använde vi `left` som den beroende variabeln $y$. Eftersom vi nu genomför en klusteranalys så modellerar vi inte med avseende på $y$ utan nu betraktar vi alla variabler som $x$. Fundera på vilka variabler du vill använda och hur det du skapar hade kunnat användas i verkligheten.  
 
 # Övningar kapitel 7 - 10
 Övningar för kapitel 7-10 kommer snart.
