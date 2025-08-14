@@ -21,7 +21,7 @@ Strikt sett förutsätts inga direkta förkunskaper i matematik men det underlä
 * Den läsare som saknar kunskaper om summasymbolen och grundläggande vektor- och matrisalgebra, se kapitel 9 och kapitel 10 i dokumentet "matematikbok". 
 ------------------------
 ## 3.1 Material från boken
-* Övningsuppgifter för boken (**OBS: kommer snart**) finns i dokumentet "övningsuppgifter".
+* Övningsuppgifter för boken finns i mappen "övningsuppgifter". I den mappen finns det en undermapp som heter "dataset", där finns olika dataset som används i uppgifterna. 
 <br>
 
 * I kapitel 1 (s.73). ritas en karta upp, för att genomföra den visualiseringen används filen "california.png", den finns i mappen "material".
