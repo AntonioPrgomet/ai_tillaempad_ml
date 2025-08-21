@@ -38,7 +38,7 @@ Videor som ger en helhetsbild kopplat till kapitel 7-9 finns på följande spell
 * https://www.youtube.com/playlist?list=PLgzaMbMPEHEy33r5tgph8TFR__UHuutBN
 ------------------------
 ## 4. Felskrivningar
-Hittar ni fel i boken så tar vi tacksamt emot dessa och lägger upp i dokumentet "errata". Mejla antonio.ek@hotmail.se
+Hittar ni fel i boken så tar vi tacksamt emot dessa och lägger upp i mappen "errata". Mejla antonio.ek@hotmail.se
 
 ------------------------
 
