@@ -27,6 +27,7 @@ Strikt sett förutsätts inga direkta förkunskaper i matematik men det underlä
 * I kapitel 1 (s.73). ritas en karta upp, för att genomföra den visualiseringen används filen "california.png", den finns i mappen "material".
 * I kapitel 1 (s.65) laddas datan "housing.csv" in, den finns i mappen "material".
 * I kapitel 8 (s.310) används en bild på en tennisboll och en linjal, bilderna finns tillgängliga i mappen "material".
+* I kapitel 10 (s.334) används ett dokument "chattbot.pdf", dokumentet finns tillgängligt i mappen "material". 
 
 ## 3.2 Inspelade videor 
 För den läsare som önskar så finns det inspelade videor. 
