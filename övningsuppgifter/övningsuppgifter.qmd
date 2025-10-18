@@ -233,12 +233,17 @@ h) *Random forest* - [https://scikit-learn.org/stable/modules/generated/sklearn.
 
 10. Förklara hur man kan tolka figur 3.13 på sidan 140. Hur hänger den ihop med figur 3.14 på sidan 141? 
 
+11. Vi har lärt oss utvärderingsmåtten *RMSE*, *MSE* och *MAE*. Ett annat utvärderingsmått är det som benämns för determinationskoefficienten eller $R^2$. Förklara vad det är för mått. Du kan läsa dokumentationen om det på nedanstående två länkar. 
+* [https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html)
+
+* [https://scikit-learn.org/stable/modules/model_evaluation.html#r2-score](https://scikit-learn.org/stable/modules/model_evaluation.html#r2-score)
+
 ## Koduppgifter
-11. Gå igenom samtliga kodexempel i kapitlet och skriv gärna av koden manuellt. Det är även bra att experimentera genom att ändra vissa delar av koden och läsa dokumentationen. 
+12. Gå igenom samtliga kodexempel i kapitlet och skriv gärna av koden manuellt. Det är även bra att experimentera genom att ändra vissa delar av koden och läsa dokumentationen. 
 
-12. Datasetet "hr_employee_data.xlsx" innehåller data kopplat till ett företags anställda. Gör en *EDA* och tillhörande analys, föreställ dig att ledningsgruppen på ett företag ska ta del av analysen. I denna uppgift ska ingen ML-modellering göras (det kommer göras i nästa kapitel). Syftet är dels att träna på att genomföra analyser dels att demonstrera hur mycket man kan göra även utan ML-modellering.  
+13. Datasetet "hr_employee_data.xlsx" innehåller data kopplat till ett företags anställda. Gör en *EDA* och tillhörande analys, föreställ dig att ledningsgruppen på ett företag ska ta del av analysen. I denna uppgift ska ingen ML-modellering göras (det kommer göras i nästa kapitel). Syftet är dels att träna på att genomföra analyser dels att demonstrera hur mycket man kan göra även utan ML-modellering.  
 
-13. Nedan ser vi en början till modellering av ett dataset kopplat till diabetes. Läs på vad datasetet innebär och genomför ett komplett ML-flöde. Börja med att göra ett grundläggande flöde som fungerar, därefter kan du om du önskar försöka förbättra resultatet. 
+14. Nedan ser vi en början till modellering av ett dataset kopplat till diabetes. Läs på vad datasetet innebär och genomför ett komplett ML-flöde. Börja med att göra ett grundläggande flöde som fungerar, därefter kan du om du önskar försöka förbättra resultatet. 
 ```{python}
 #| eval: false
 
@@ -258,14 +263,14 @@ print(y.info())
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
 
-14. I denna uppgift ska vi arbeta med datasetet "car_price_dataset.csv". 
+15. I denna uppgift ska vi arbeta med datasetet "car_price_dataset.csv". 
 a) Gör ett komplett ML flöde där den beroende variabeln, $y$, är `price`. Vi vill alltså skapa en modell som kan prediktera en bils pris. Ett tips är att först göra ett enkelt flöde som fungerar, har du därefter tid kan du försöka förbättra resultaten. 
 
 b) Gör en applikation med hjälp av *Streamlit* där användaren kan mata in olika uppgifter om en bil och därefter få ett predikterat pris. Du kan se följande video för att lära dig mer om hur *Streamlit* fungerar: [https://www.youtube.com/watch?v=ggDa-RzPP7A&list=PLgzaMbMPEHEx9Als3F3sKKXexWnyEKH45&index=11&t=158s](https://www.youtube.com/watch?v=ggDa-RzPP7A&list=PLgzaMbMPEHEx9Als3F3sKKXexWnyEKH45&index=11&t=158s)
 
 c) Det du gjort i denna uppgift, hade det kunnat användas i verkligheten? Till vad i sådana fall? 
 
-15. I denna uppgift ska du göra ett komplett ML-flöde där du modellerar diamantpriser som finns tillgängliga i datasetet "diamonds.csv". Du kan läsa mer om datasetet här: [https://www.kaggle.com/datasets/shivam2503/diamonds](https://www.kaggle.com/datasets/shivam2503/diamonds)
+16. I denna uppgift ska du göra ett komplett ML-flöde där du modellerar diamantpriser som finns tillgängliga i datasetet "diamonds.csv". Du kan läsa mer om datasetet här: [https://www.kaggle.com/datasets/shivam2503/diamonds](https://www.kaggle.com/datasets/shivam2503/diamonds)
 
 # Kapitel 4 - Klassificering
 
@@ -306,16 +311,16 @@ f) *Extra trees* - [https://scikit-learn.org/stable/modules/generated/sklearn.en
 
 
 ## Resonemangfrågor
-5. Stina säger till Kalle på lunchsamtalet "jag vill ha högsta möjliga *precision* för vår klassificieringsmodell". Kalle funderar ett tag och säger "men vad händer då med *recall*"? Vad hade du svarat? I vilka fall kan man tänka sig vilja ha en så hög *precision* som möjligt? I vilka fall kan det vara dåligt? Om vi tänker oss rättsväsendet där en slutgiltig dom kan leda till fängelse, vad kan vi då säga om *precision-recall tradeoff*? 
+7. Stina säger till Kalle på lunchsamtalet "jag vill ha högsta möjliga *precision* för vår klassificieringsmodell". Kalle funderar ett tag och säger "men vad händer då med *recall*"? Vad hade du svarat? I vilka fall kan man tänka sig vilja ha en så hög *precision* som möjligt? I vilka fall kan det vara dåligt? Om vi tänker oss rättsväsendet där en slutgiltig dom kan leda till fängelse, vad kan vi då säga om *precision-recall tradeoff*? 
 
-6. Förklara hur man kan tolka figur 4.8 på sidan 175. 
+8. Förklara hur man kan tolka figur 4.8 på sidan 175. 
 
-7. På sidan 209 står det "på träningsdatan använder vi `.fit_transform()`, på valideringsdatan och testdatan använder vi endast `.transform()`." Förklara logiken bakom detta. 
+9. På sidan 209 står det "på träningsdatan använder vi `.fit_transform()`, på valideringsdatan och testdatan använder vi endast `.transform()`." Förklara logiken bakom detta. 
 
 ## Koduppgifter
-8. Gå igenom samtliga kodexempel i kapitlet och skriv gärna av koden manuellt. Det är även bra att experimentera genom att ändra vissa delar av koden och läsa dokumentationen. 
+10. Gå igenom samtliga kodexempel i kapitlet och skriv gärna av koden manuellt. Det är även bra att experimentera genom att ändra vissa delar av koden och läsa dokumentationen. 
 
-9. Förklara vad nedanstående kod gör och tolka resultatet från koden. 
+11. Förklara vad nedanstående kod gör och tolka resultatet från koden. 
 ```{python}
 #| eval: false
 from sklearn.metrics import classification_report
@@ -325,11 +330,11 @@ target_names = ['class 0', 'class 1', 'class 2']
 print(classification_report(y_true, y_pred, target_names=target_names))
 ```
 
-10. Läs dokumentationen och visualisera ett beslutsträd: [https://scikit-learn.org/stable/modules/generated/sklearn.tree.plot_tree.html](https://scikit-learn.org/stable/modules/generated/sklearn.tree.plot_tree.html)
+12. Läs dokumentationen och visualisera ett beslutsträd: [https://scikit-learn.org/stable/modules/generated/sklearn.tree.plot_tree.html](https://scikit-learn.org/stable/modules/generated/sklearn.tree.plot_tree.html)
 
-11. I föregående kapitel gjordes en *EDA* på datasetet "hr_employee_data.xlsx". Gör nu ett komplett ML-flöde där den beroende variabeln, $y$, är `left`. Om den variabeln är 1 så betyder det att den anställde har lämnat företaget och om den är 0 så betyder det att den anställde inte har lämnat företaget, det vill säga jobbar kvar. 
+13. I föregående kapitel gjordes en *EDA* på datasetet "hr_employee_data.xlsx". Gör nu ett komplett ML-flöde där den beroende variabeln, $y$, är `left`. Om den variabeln är 1 så betyder det att den anställde har lämnat företaget och om den är 0 så betyder det att den anställde inte har lämnat företaget, det vill säga jobbar kvar. 
 
-12. Nedan ser vi en början till modellering av ett mycket berömt dataset kopplat till blommor. Läs på vad datasetet innebär och genomför ett komplett ML-flöde. Börja med att göra ett grundläggande flöde som fungerar, därefter kan du om du önskar försöka förbättra resultatet. 
+14. Nedan ser vi en början till modellering av ett mycket berömt dataset kopplat till blommor. Läs på vad datasetet innebär och genomför ett komplett ML-flöde. Börja med att göra ett grundläggande flöde som fungerar, därefter kan du om du önskar försöka förbättra resultatet. 
 ```{python}
 #| eval: false
 
@@ -357,7 +362,8 @@ plt.title('Scatter Plot of Sepal Length vs. Sepal Width (Train Data)')
 plt.legend(handles=scatter.legend_elements()[0], labels=classes)
 ```
 
-13. I avsnitt 4.4.1 "Kodexempel 1 - Klassificering av MNIST" modelleras *MNIST*. Skriv kod så att du kan ta egna bilder (via exempelvis mobilen) på handskrivna siffror och prediktera dessa. Om du känner dig inspirerad kan du också skapa en *Streamlit* applikation. Notera, det huvudsakliga arbetet blir alltså att *preprocessa*, det vill säga bearbeta bilderna som tas via mobilen så modellen kan prediktera dem. I verkligheten är det ofta långt ifrån trivialt att genomföra *preprocessing*. 
+15. I avsnitt 4.4.1 "Kodexempel 1 - Klassificering av MNIST" modelleras *MNIST*. Skriv kod så att du kan ta egna bilder (via exempelvis mobilen) på handskrivna siffror och prediktera dessa. Om du känner dig inspirerad kan du också skapa en *Streamlit* applikation. Notera, det huvudsakliga arbetet blir alltså att *preprocessa*, det vill säga bearbeta bilderna som tas via mobilen så modellen kan prediktera dem. I verkligheten är det ofta långt ifrån trivialt att genomföra *preprocessing*. Exempel på hur denna typ av projekt kan se ut kan du se här: [https://www.linkedin.com/posts/antonioprgomet_toppresultat-fr%C3%A5n-deltagarna-p%C3%A5-kursen-pythonprogrammering-activity-7292893718028718081-oAD0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADH7YOkBJcbaNUfHDmlA4-6mf94mMwPgnRk](https://www.linkedin.com/posts/antonioprgomet_toppresultat-fr%C3%A5n-deltagarna-p%C3%A5-kursen-pythonprogrammering-activity-7292893718028718081-oAD0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADH7YOkBJcbaNUfHDmlA4-6mf94mMwPgnRk)
+
 
 
 # Kapitel 5 - Dimensionsreducering
@@ -452,18 +458,111 @@ d) Vi har gjort ett enkelt kodexempel, lek gärna runt och fortsätt utveckla de
 
 8. Genomför en klusteranalys på datasetet "hr_employee_data.xlsx". Notera, i kapitel 4, uppgift 11, så använde vi `left` som den beroende variabeln $y$. Eftersom vi nu genomför en klusteranalys så modellerar vi inte med avseende på $y$ utan nu betraktar vi alla variabler som $x$. Fundera på vilka variabler du vill använda och hur det du skapar hade kunnat användas i verkligheten.  
 
-# Övningar kapitel 7 - 10
-Övningar för kapitel 7-10 kommer snart.
+9. Genomför en klustringanalys på datasetet som du hittar här: 
+[https://www.kaggle.com/datasets/thebumpkin/1980s-classic-hits-with-spotify-data](https://www.kaggle.com/datasets/thebumpkin/1980s-classic-hits-with-spotify-data)
 
-
-<!-- # Kapitel 10 - Chattbottar
+# Kapitel 7 - Artificiella neurala nätverk (ANN)
 
 ## Faktafrågor
+1. Vad har ANN modellerna inspirerats av? 
+
+2. Vad refererar "djup" till i begreppet "djupinlärning"?
+
+3. Förklara vad som händer i figur 7.2, 7.3, figur 7.4 och figur 7.5. Varför används aktiveringsfunktioner? 
+
+4. Har neurala nätverk få eller många parametrar? 
+
+5. Förklara intuitivt hur *dropout*-regularisering fungerar. 
 
 ## Resonemangfrågor
-**Lägg in Cursor och loveble**
+6. Din kollega ber dig förklara tabell 7.1 och tabell 7.2. Gör det!
 
-**Eliza**
+7. Experimentera med neurala nätverk på följande länk: 
+[https://playground.tensorflow.org/](https://playground.tensorflow.org/)
 
-## Koduppgifter -->
+8. Förklara översiktligt hur *backpropagation* fungerar. Använd figur 7.7 till din hjälp. 
 
+## Koduppgifter
+9. Gå igenom samtliga kodexempel i kapitlet och skriv gärna av koden manuellt. Det är även bra att experimentera genom att ändra vissa delar av koden och läsa dokumentationen. 
+
+10. I denna uppgift ska vi använda MNIST-datan som vi arbetat med tidigare. Detta för att ha ett bekant dataset att arbeta med och experimentera med ANN-modeller. 
+a) Träna en ANN-modell på MNIST-datan. Vad får du för resultat? 
+
+b) Prova justera hyperparametrarna med *KerasTuner*. Notera, du har som vanligt dokumentationen till din hjälp. Får du bättre resultat? 
+
+# Kapitel 8 - *Convolutional neural network* (CNN)
+
+## Faktafrågor
+1. Vad krävs det för att ett neuralt nätverk ska klassas som CNN? 
+
+2. Inom vilket tillämpningsområde är CNN generellt sett en väldigt kraftfull modell? 
+
+3. Vad menas med RGB? 
+
+4. Vad är *data augmentation*? 
+
+## Resonemangfrågor
+5. Förklara översiktligt hur CNN fungerar. Använd begreppen *convolution layer* och *pooling layer* i ditt svar. 
+
+6. Din kollega ber dig förklara figur 8.4. Gör det!
+
+## Koduppgifter
+7. Gå igenom samtliga kodexempel i kapitlet och skriv gärna av koden manuellt. Det är även bra att experimentera genom att ändra vissa delar av koden och läsa dokumentationen. 
+
+8. I denna uppgift arbetar vi med CIFAR-100 datasetet som gicks igenom i kodexempel 1. 
+a) Skapa en CNN-modell för att prediktera datasetet. 
+
+b) Om du justerar hyperparametrar med *KerasTuner*, får du bättre resultat? 
+
+c) Prova använd *transfer learning* för att genomföra prediktioner, får du bättre resultat? 
+
+9. I denna uppgift utgår vi ifrån kodexempel 2 i detta kapitel. 
+
+a) Ta egna bilder som du predikterar med en förtränad modell. 
+
+b) Bygg en applikation (med exempelvis *Streamlit*) som använder en förtränad modell för att prediktera bilder. Hur du designar applikationen och vilken funktionalitet du inkluderar väljer du själv. 
+
+10. Använd dig utav CNN för att skapa en modell som kan prediktera teckenspråk. Datan finns tillgänglig här: 
+[https://www.kaggle.com/datasets/datamunge/sign-language-mnist](https://www.kaggle.com/datasets/datamunge/sign-language-mnist)
+
+# Kapitel 9 - *Recurrent neural network* (RNN)
+
+## Faktafrågor
+1. Rent generellt, vad är RNN-modeller designade för att användas till? 
+
+2. Vad heter två populära modellarkitekturer inom RNN? 
+
+3. Vad står NLP för? Vad är *embeddings*? 
+
+## Resonemangfrågor
+4. Din kollega ber dig förklara figur 9.2. Gör det!
+
+
+## Koduppgifter
+5. Gå igenom samtliga kodexempel i kapitlet och skriv gärna av koden manuellt. Det är även bra att experimentera genom att ändra vissa delar av koden och läsa dokumentationen. 
+
+6. Vill du fördjupa dig inom RNN, gå till Kaggle, [https://www.kaggle.com/datasets](https://www.kaggle.com/datasets), och hitta ett lämpligt dataset att arbeta med. 
+
+# Kapitel 10 - Chattbottar
+
+## Faktafrågor
+1. Vad är *prompt engineering*? 
+
+2. Vad är *RAG*? 
+
+3. Vad är *chunking* och *embeddings*? 
+
+## Resonemangfrågor
+
+4. Förklara översiktligt hur man kan evaluera en chattbot. 
+
+5. Din kollega frågar dig vad ELIZA och Turingtestet är. Läs nedanstående två länkar innan du besvarar frågan.
+* [https://en.wikipedia.org/wiki/ELIZA](https://en.wikipedia.org/wiki/ELIZA)
+* [https://sv.wikipedia.org/wiki/Turingtestet](https://sv.wikipedia.org/wiki/Turingtestet)
+
+6. Ge konkreta exempel på hur olika företag och organisationer kan ta nytta av chattbottar samt vilka risker som finns. 
+
+## Koduppgifter
+7. Gå igenom samtliga kodexempel i kapitlet och skriv gärna av koden manuellt. Det är även bra att experimentera genom att ändra vissa delar av koden och läsa dokumentationen. 
+
+8. Skapa en chattbot som svarar på frågor utifrån något dokument som du själv väljer. 
